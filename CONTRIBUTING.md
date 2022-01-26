@@ -14,12 +14,12 @@ yarn start
 
 Don't forget to setup your IDE with `eslint` and `prettier`.
 
-## Change BSC network
+## Change FTM network
 
-To change the BSC network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
+To change the FTM network from test net, modify the `REACT_APP_CHAIN_ID` value in `.env`.
 
-- MAIN NET `56`
-- TEST NET `97`
+- MAIN NET `250`
+- TEST NET `4002`
 
 ## Tests
 
