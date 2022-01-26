@@ -44,8 +44,6 @@ const BodyWrapper = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   z-index: 1;
-
-  background-image: url('/static/media/bg.bfd323f2.png');
   background-repeat: no-repeat;
   background-position: top;
   background-size: contain;
