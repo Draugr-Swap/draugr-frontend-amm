@@ -1154,7 +1154,7 @@
 
 "@druagrswap-libs/uikit@Draugr-Swap/draugr-uikit":
   version "0.10.2"
-  resolved "https://codeload.github.com/Draugr-Swap/draugr-uikit/tar.gz/f1a7e0c46a60740a6d99277c5c10b75296e94fb6"
+  resolved "https://codeload.github.com/Draugr-Swap/draugr-uikit/tar.gz/6cce09784780e9121cc7e21179ebe5684ac4264f"
   dependencies:
     "@types/lodash" "^4.14.162"
     "@types/styled-system" "^5.1.10"
