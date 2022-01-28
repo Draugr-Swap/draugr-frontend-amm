@@ -1,4 +1,4 @@
-import { MenuEntry } from '@pancakeswap-libs/uikit'
+import { MenuEntry } from '@druagrswap-libs/uikit'
 
 const config: MenuEntry[] = [
   {
@@ -35,10 +35,10 @@ const config: MenuEntry[] = [
     label: 'Info',
     icon: 'InfoIcon',
     items: [
-      {
-        label: 'PancakeSwap',
-        href: 'https://pancakeswap.info/token/draugr-token-address',
-      },
+      // {
+      //   label: 'PancakeSwap',
+      //   href: 'https://pancakeswap.info/token/draugr-token-address',
+      // },
       {
         label: 'CoinMarketCap',
         href: 'https://coinmarketcap.com/currencies/draugr-swap/',

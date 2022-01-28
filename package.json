@@ -5,9 +5,8 @@
   "private": true,
   "dependencies": {
     "@crowdin/crowdin-api-client": "^1.8.16",
+    "@druagrswap-libs/uikit": "Draugr-Swap/draugr-uikit",
     "@ethersproject/experimental": "^5.0.1",
-    "@pancakeswap-libs/sdk": "1.0.1",
-    "@pancakeswap-libs/uikit": "Draugr-Swap/draugr-uikit",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
@@ -38,6 +37,7 @@
     "bignumber.js": "^9.0.0",
     "cids": "^1.0.0",
     "copy-to-clipboard": "^3.2.0",
+    "druagrswap-sdk": "^1.2.1",
     "ethers": "^5.0.7",
     "i18next": "^15.0.9",
     "i18next-browser-languagedetector": "^3.0.1",
@@ -79,7 +79,7 @@
     "start-server-and-test": "^1.11.0"
   },
   "resolutions": {
-    "@walletconnect/web3-provider": "1.1.1-alpha.0"
+    "@walletconnect/web3-provider": "^1.5.0"
   },
   "scripts": {
     "start": "react-scripts start",

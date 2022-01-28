@@ -11,9 +11,10 @@ interface Window {
     isMetaMask?: true
     on?: (...args: any[]) => void
     removeListener?: (...args: any[]) => void
+    request?: (...args: any[]) => void
   }
   web3?: any
-  BinanceChain?: BinanceChain
+  Fantom?: Fantom
 }
 
 declare module 'content-hash' {
@@ -26,7 +27,7 @@ declare module 'multihashes' {
   declare function toB58String(hash: Uint8Array): string
 }
 
-interface BinanceChain {
+interface Fantom {
   send: unknown
   enable: () => Promise<string[]>
   on?: (method: string, listener: (...args: any[]) => void) => void

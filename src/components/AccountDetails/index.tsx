@@ -1,7 +1,7 @@
 import React, { useCallback, useContext } from 'react'
 import { useDispatch } from 'react-redux'
 import styled, { ThemeContext } from 'styled-components'
-import { Button } from '@pancakeswap-libs/uikit'
+import { Button } from '@druagrswap-libs/uikit'
 import { ExternalLink as LinkIcon } from 'react-feather'
 import { useActiveWeb3React } from '../../hooks'
 import { AppDispatch } from '../../state'
@@ -14,7 +14,7 @@ import Transaction from './Transaction'
 import { SUPPORTED_WALLETS } from '../../constants'
 import { ReactComponent as Close } from '../../assets/images/x.svg'
 
-import { injected, walletconnect, walletlink, fortmatic, portis, bsc } from '../../connectors'
+import { injected, walletconnect, walletlink, fortmatic, portis, fantom } from '../../connectors'
 import CoinbaseWalletIcon from '../../assets/images/coinbaseWalletIcon.svg'
 import WalletConnectIcon from '../../assets/images/walletConnectIcon.svg'
 import FortmaticIcon from '../../assets/images/fortmaticIcon.png'
@@ -317,7 +317,7 @@ export default function AccountDetails({
               <AccountGroupingRow>
                 {formatConnectorName()}
                 <div>
-                  {connector !== injected && connector !== walletlink && connector !== bsc && (
+                  {connector !== injected && connector !== walletlink && connector !== fantom && (
                     <WalletAction
                       style={{ fontSize: '.825rem', fontWeight: 400, marginRight: '8px' }}
                       onClick={() => {
@@ -373,7 +373,7 @@ export default function AccountDetails({
                             href={chainId && getEtherscanLink(chainId, ENSName, 'address')}
                           >
                             <LinkIcon size={16} />
-                            <span style={{ marginLeft: '4px' }}>View on bscscan</span>
+                            <span style={{ marginLeft: '4px' }}>View on ftmscan</span>
                           </AddressLink>
                         )}
                       </div>
@@ -395,7 +395,7 @@ export default function AccountDetails({
                             href={getEtherscanLink(chainId, account, 'address')}
                           >
                             <LinkIcon size={16} />
-                            <span style={{ marginLeft: '4px' }}>View on bscscan</span>
+                            <span style={{ marginLeft: '4px' }}>View on ftmscan</span>
                           </AddressLink>
                         )}
                       </div>
