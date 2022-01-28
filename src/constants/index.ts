@@ -1,8 +1,8 @@
 import { ChainId, JSBI, Percent, Token, WETH } from '@pancakeswap-libs/sdk'
 import { AbstractConnector } from '@web3-react/abstract-connector'
 
-// import { bsc, fortmatic, injected, portis, walletconnect, walletlink } from '../connectors'
-import { injected, bsc } from '../connectors'
+// import { bsc, fortmatic, injected, , walletconnect, walletlink } from '../connectors'
+import { injected, bsc, portis, walletlink } from '../connectors'
 // TODO
 export const ROUTER_ADDRESS = '0x05fF2B0DB69458A0750badebc4f9e13aDd608C7F'
 
@@ -75,14 +75,14 @@ export interface WalletInfo {
 }
 
 export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
-  BSC: {
-    connector: bsc,
-    name: 'Binance Chain Wallet',
-    iconName: 'binance.svg',
-    description: 'Easy-to-use browser extension.',
-    href: null,
-    color: '#E8831D'
-  },
+  // BSC: {
+  //   connector: bsc,
+  //   name: 'Binance Chain Wallet',
+  //   iconName: 'binance.svg',
+  //   description: 'Easy-to-use browser extension.',
+  //   href: null,
+  //   color: '#E8831D'
+  // },
   INJECTED: {
     connector: injected,
     name: 'Injected',
@@ -99,7 +99,7 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
     description: 'Easy-to-use browser extension.',
     href: null,
     color: '#E8831D'
-  }
+  },
   // WALLET_CONNECT: {
   //   connector: walletconnect,
   //   name: 'WalletConnect',
@@ -109,14 +109,14 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
   //   color: '#4196FC',
   //   mobile: true
   // },
-  // WALLET_LINK: {
-  //   connector: walletlink,
-  //   name: 'Coinbase Wallet',
-  //   iconName: 'coinbaseWalletIcon.svg',
-  //   description: 'Use Coinbase Wallet app on mobile device',
-  //   href: null,
-  //   color: '#315CF5'
-  // },
+  WALLET_LINK: {
+    connector: walletlink,
+    name: 'Coinbase Wallet',
+    iconName: 'coinbaseWalletIcon.svg',
+    description: 'Use Coinbase Wallet app on mobile device',
+    href: null,
+    color: '#315CF5'
+  },
   // COINBASE_LINK: {
   //   name: 'Open in Coinbase Wallet',
   //   iconName: 'coinbaseWalletIcon.svg',
@@ -135,15 +135,15 @@ export const SUPPORTED_WALLETS: { [key: string]: WalletInfo } = {
   //   color: '#6748FF',
   //   mobile: true
   // },
-  // Portis: {
-  //   connector: portis,
-  //   name: 'Portis',
-  //   iconName: 'portisIcon.png',
-  //   description: 'Login using Portis hosted wallet',
-  //   href: null,
-  //   color: '#4A6C9B',
-  //   mobile: true
-  // }
+  Portis: {
+    connector: portis,
+    name: 'Portis',
+    iconName: 'portisIcon.png',
+    description: 'Login using Portis hosted wallet',
+    href: null,
+    color: '#4A6C9B',
+    mobile: true
+  }
 }
 
 export const NetworkContextName = 'NETWORK'
