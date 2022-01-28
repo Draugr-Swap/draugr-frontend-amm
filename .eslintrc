@@ -21,6 +21,13 @@
     "camelcase": 0,
     "no-alert": 0,
     "no-underscore-dangle": 0,
+    "react/jsx-no-bind": [0, {
+      "ignoreDOMComponents": true,
+      "ignoreRefs": true,
+      "allowArrowFunctions": true,
+      "allowFunctions": true,
+      "allowBind": true
+    }],
     // Start temporary rules
     // These rules are here just to keep the lint error to 0 during the migration to the new rule set
     // They need to be removed and fixed as soon as possible
