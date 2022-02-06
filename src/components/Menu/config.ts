@@ -22,12 +22,12 @@ const config: MenuEntry[] = [
     ]
   },
   {
-    label: 'Farms',
+    label: 'Raids',
     icon: 'FarmIcon',
     href: 'https://www.draugrswap.finance/farms'
   },
   {
-    label: 'Armory',
+    label: 'Forge',
     icon: 'PoolIcon',
     href: 'https://www.draugrswap.finance/nests'
   },
@@ -35,10 +35,10 @@ const config: MenuEntry[] = [
     label: 'Info',
     icon: 'InfoIcon',
     items: [
-      // {
-      //   label: 'PancakeSwap',
-      //   href: 'https://pancakeswap.info/token/draugr-token-address',
-      // },
+      {
+        label: 'Fantom Scan',
+        href: 'https://ftmscan.com/token/0x7D572502Bd99f8830F32F2F4CF0fC8767282A992',
+      },
       {
         label: 'CoinMarketCap',
         href: 'https://coinmarketcap.com/currencies/draugr-swap/',
@@ -66,11 +66,6 @@ const config: MenuEntry[] = [
         href: "https://draugr-swap.medium.com/",
       },
     ],
-  },
-  {
-    label: 'Audit by ****',
-    icon: 'HelmetIcon',
-    href: 'https://www.draugrswap.finance/files/audit.pdf',
   },
 ]
 
