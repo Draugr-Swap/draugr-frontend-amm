@@ -22,17 +22,16 @@
     "name": "aggregate",
     "outputs": [
       {
-        "internalType": "uint256",
         "name": "blockNumber",
         "type": "uint256"
       },
       {
-        "internalType": "bytes[]",
         "name": "returnData",
         "type": "bytes[]"
       }
     ],
-    "stateMutability": "nonpayable",
+    "payable": false,
+    "stateMutability": "view",
     "type": "function"
   },
   {
