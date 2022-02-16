@@ -11,6 +11,15 @@
   "keywords": ["druagrswap", "default"],
   "tokens": [
     {
+      "name": "Draugr",
+      "symbol": "DRAUGR",
+      "address": "0x7D572502Bd99f8830F32F2F4CF0fC8767282A992",
+      "chainId": 250,
+      "decimals": 18,
+      "logoURI": "https://exchange.draugrswap.finance/images/egg/9.png",
+      "bridgeId": ""
+    },
+    {
       "name": "Aave",
       "symbol": "AAVE",
       "address": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B",
