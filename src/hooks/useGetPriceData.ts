@@ -33,7 +33,7 @@ const useGetPriceData = () => {
           const busd = new BigNumber(busdAmount);
           console.log("Cake Amount", cake);
           console.log("BUSD Amount", busd);
-          const cakePrice = busd.div(cake).toNumber();
+          const cakePrice = busd.div(cake).multipliedBy('1e+12').toNumber();
           console.log("Cake Price", cakePrice);
           setData(cakePrice)
         }
