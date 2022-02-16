@@ -11,10 +11,6 @@ type ApiResponse = {
   update_at: string
 }
 
-/**
- * Due to Cors the api was forked and a proxy was created
- * @see https://github.com/pancakeswap/gatsby-pancake-api/commit/e811b67a43ccc41edd4a0fa1ee704b2f510aa0ba
- */
 const useGetPriceData = () => {
   const [data, setData] = useState<number>(0)
 
@@ -31,10 +27,14 @@ const useGetPriceData = () => {
           ];
 
           const [resultsBlockNumber, result] = await multicallContract.aggregate(calls);
+          console.log("Call Result", result);
           const [cakeAmount, busdAmount] = result.map(r=>ERC20_INTERFACE.decodeFunctionResult("balanceOf", r));
           const cake = new BigNumber(cakeAmount);
           const busd = new BigNumber(busdAmount);
+          console.log("Cake Amount", cake);
+          console.log("BUSD Amount", busd);
           const cakePrice = busd.div(cake).toNumber();
+          console.log("Cake Price", cakePrice);
           setData(cakePrice)
         }
       } catch (error) {
