@@ -37,7 +37,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Fantom Scan',
-        href: 'https://ftmscan.com/token/0x7D572502Bd99f8830F32F2F4CF0fC8767282A992',
+        href: 'https://ftmscan.com/token/0xC48a50A24b0E87fdE6B9a2Dcf427e6564b5F53c9',
       },
       {
         label: 'CoinMarketCap',
