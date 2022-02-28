@@ -39,14 +39,6 @@ const config: MenuEntry[] = [
         label: 'Fantom Scan',
         href: 'https://ftmscan.com/token/0x89B784E11563C3aC0c788387158b1d51eA1D326d',
       },
-      {
-        label: 'CoinMarketCap',
-        href: 'https://coinmarketcap.com/currencies/draugr-swap/',
-      },
-      {
-        label: 'CoinGecko',
-        href: 'https://www.coingecko.com/en/coins/draugr-swap',
-      },
     ]
   },
   {
@@ -59,12 +51,12 @@ const config: MenuEntry[] = [
       },
       {
         label: "Docs",
-        href: "https://draugrswap.gitbook.io/draugr-swap/",
+        href: "https://docs.draugrswap.finance/",
       },
-      {
-        label: "Blog",
-        href: "https://draugr-swap.medium.com/",
-      },
+      // {
+      //   label: "Blog",
+      //   href: "https://draugr-swap.medium.com/",
+      // },
     ],
   },
 ]

@@ -339,7 +339,7 @@ const Swap = () => {
                       style={{ borderRadius: '50%' }}
                       size="sm"
                     >
-                      <ArrowDownIcon color="primary" width="24px" />
+                      <ArrowDownIcon color={theme.colors.textSubtle} width="24px" />
                     </IconButton>
                   </ArrowWrapper>
                   {recipient === null && !showWrap && isExpertMode ? (
