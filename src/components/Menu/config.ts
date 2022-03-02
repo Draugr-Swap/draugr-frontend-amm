@@ -37,7 +37,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Fantom Scan',
-        href: 'https://ftmscan.com/token/0x89B784E11563C3aC0c788387158b1d51eA1D326d',
+        href: 'https://ftmscan.com/token/0xf393E9Ea75befAb72D5063dE4c1b380955E7C560',
       },
     ]
   },
